@@ -80,12 +80,12 @@ class _DashboardPageState extends State<DashboardPage> with SingleTickerProvider
           controller: tabController,
           dragStartBehavior: DragStartBehavior.down,
           physics: const NeverScrollableScrollPhysics(),
-          children: [
+          children: const [
             MapPage(),
-            const SamplePage(icon: Icons.message,),
-            const HomePage(),
-            const SamplePage(icon: Icons.favorite,),
-            const SamplePage(icon: Icons.insert_emoticon_sharp,),
+            SamplePage(icon: Icons.message,),
+            HomePage(),
+            SamplePage(icon: Icons.favorite,),
+            SamplePage(icon: Icons.insert_emoticon_sharp,),
           ],
         ),
         child: Container(
